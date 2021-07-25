@@ -55,7 +55,7 @@ class Quizdown(SphinxDirective):
 def add_quizdown_lib(app, pagename, templatename, context, doctree):
     quizdown_js = app.config.quizdown_config.setdefault(
         'quizdown_js', 
-        'https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js'
+        'https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js'
     )
 
     app.add_js_file(quizdown_js)
